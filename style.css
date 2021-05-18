@@ -1,0 +1,572 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* navigation + header */
+.nav-header{
+    background-image: url(images/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding-bottom: 20em;
+    /* border: 2px solid red; */
+}
+
+/* flex of brand logo and nav links */
+.nav-flex{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    padding-top: 2em;
+}
+
+/* brand-logo */
+.brand-logo{
+    width:70%;
+}
+
+.hamburger-nav{
+    /* border: 2px solid red; */
+    /* display: none; */
+}
+
+/* hamburger navbar */
+.hamburger-icon{
+width:90%;
+}
+
+.hamburger-link{
+    /* border: 2px solid red; */
+    display: none;
+    position: absolute;
+    left: 1em;
+    margin-top: 2em;
+    width: 90%;
+    text-transform: uppercase;
+}
+
+/* nav links */
+.nav-link{
+    color:white;
+    text-decoration: none;
+    display: none;
+    display: block;
+    padding: .5em 0;
+}
+
+/* active states */
+
+.nav-header.active{
+    background: black;
+    background-image: none;
+}
+
+.hamburger-image.active{
+    background-image: url(images/icon-close.svg) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hamburger-link.active{
+    display: block;
+  
+}
+
+.nav-info.active{
+    margin-top: 20em;
+}
+
+/* nav header title */
+
+.nav-info{
+    border: 1px solid white;
+    margin: 0 auto;
+    margin-top:14em;
+    width: 90%;   
+    color:white;
+    padding: 1.5em 1.5em;
+}
+
+.nav-info--title{
+    text-transform: uppercase;
+    font-size: 2.5em;
+    width: 90%;
+    /* border: 2px solid red; */
+    margin: 0;
+}
+
+/* section-one */
+
+.section-one{
+    margin: 0 auto;
+    margin-top: 5em;
+    width: 90%;
+}
+
+#image-interactive{
+    width: 100%;
+}
+
+.section-one--title{
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+.section-one--desc{
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+    color: hsl(0, 0%, 55%);
+    font-size: .9em;
+    /* border: 2px solid red; */
+    line-height: 1.7em;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+/* section two */
+
+.section-two{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5em;
+}
+
+.section-two--title{
+    text-align: center;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+/* section two flex */
+.section-two--flex{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+/* btn section */
+
+.section-two--btn{
+    /* border: 2px solid blue; */
+    margin-top: 2em;
+   
+    
+}
+
+.btn{
+    color: black;
+    text-decoration: none;
+    border: 1px solid hsl(0, 0%, 0%);
+    padding: .5em 1em;
+    text-transform: uppercase;
+    font-family: 'Alata', sans-serif;
+    letter-spacing: .3em;
+    display: block;
+    width: 45%;
+    text-align: center;
+   margin: auto;
+      
+}
+
+.btn:hover{
+    color: white;
+    background: black;
+}
+
+/* btn section ends */
+
+/* image section */
+
+.section-two--images{
+    /* border: 2px solid red; */
+    
+}
+
+.section-two--pics{
+    /* border: 2px solid yellow; */
+    min-height: 25vh;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center;
+}
+
+.section-two--pics + .section-two--pics{
+    margin-top: 1em;
+}
+
+.pics-title{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    /* border: 2px solid green; */
+    width: 40%;
+    margin-left: 1em;
+    margin-top: 1em;
+    padding-top: 3em;
+
+}
+
+/* pic one */
+.section-two--pic1{
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0.5),hsla(0, 0%, 0%,0.1)), url(images/mobile/image-deep-earth.jpg);  
+}
+
+/* pic two */
+.section-two--pic2{
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0.6),hsla(0, 0%, 0%,0.1)), url(images/mobile/image-night-arcade.jpg);
+    background-position: bottom; 
+}
+
+/* pic three */
+.section-two--pic3{
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0.5),hsla(0, 0%, 0%,0.1)), url(images/mobile/image-soccer-team.jpg);  
+}
+
+/* pic four */
+.section-two--pic4{
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0.5),hsla(0, 0%, 0%,0.1)), url(images/mobile/image-grid.jpg);
+}
+
+/* pic five */
+.section-two--pic5{
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0.5),hsla(0, 0%, 0%,0.1)), url(images/mobile/image-from-above.jpg);
+}
+
+/* pic six */
+.section-two--pic6{
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0.5),hsla(0, 0%, 0%,0.1)), url(images/mobile/image-pocket-borealis.jpg);
+}
+
+/* pic seven */
+.section-two--pic7{
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0.5),hsla(0, 0%, 0%,0.1)), url(images/mobile/image-curiosity.jpg);
+}
+
+/* pic eight */
+.section-two--pic8{
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0.5),hsla(0, 0%, 0%,0.1)), url(images/mobile/image-fisheye.jpg);
+}
+
+
+/* footer section */
+.section-three{
+    /* border:2px solid red; */
+    background: black;
+    margin-top: 5em;
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+}
+
+.footer-logo{
+    width:60%;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+.section-three--links{
+  margin: 1em 0;
+}
+
+.footer-link{
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 2em;
+    
+    
+}
+
+.icon-section{
+    margin-top: 2em;
+}
+.icons{
+    width: 5%;
+    margin: 0 auto;
+}
+
+.icons + .icons{
+    margin-left: .5em;
+}
+
+/* footer copyright */
+
+.copyright{
+    color:hsl(0, 0%, 41%);
+}
+
+
+/* ~~~~~ FOR DESKTOP SCREENS ~~~~~ */
+
+@media (min-width:700px){
+
+/* navigation + header */
+.nav-header{
+    background-image: url(images/desktop/image-hero.jpg);
+    background-position: center;
+}
+
+/* flex of brand logo and nav links */
+.nav-flex{
+    /* border: 2px solid red; */
+    padding: 0 4.5em;
+    padding-top: 2em;
+}
+
+/* nav section */
+.hamburger-icon{
+    display: none;
+}
+
+.nav-list{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.hamburger-nav{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-grow: 1;
+}
+
+.hamburger-link{
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    position: relative;
+    margin-top: 0;
+    left: 0;
+    text-transform: capitalize;
+}
+
+/* nav links */
+
+.nav-link{
+    margin-right: 1.5em;
+    font-weight: 600;
+}
+
+.nav-link::after{
+    display: block;
+    content: "";
+    position: absolute;
+    margin-top: 2px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease 0s;
+    border-radius: 150px;
+      
+}
+
+.nav-link:hover::after{
+    width: 50px;
+    background:white;
+}
+
+/* nav-header title */
+
+.nav-info{
+    width: 50%;
+    margin-left: 5em;
+}
+
+.nav-info--title{
+   font-size: 4em;
+    /* border: 2px solid red; */
+}
+
+/* section one */
+
+.section-one{}
+
+.interactive{
+    /* border: 2px solid red; */
+    width: 50%;
+    position: absolute;
+    margin-top: -20%;
+    margin-left: 35%;
+    min-height: 50vh;
+    background: white;
+    
+}
+
+#image-interactive{
+    width: 50%;
+}
+
+.section-one--title{
+    /* border: 2px solid blue; */
+    text-align: left;
+    width: 65%;
+    font-size: 3em;
+    margin-top: 1.5em;
+}
+
+.section-one--desc{
+    text-align: left;
+    width: 65%;
+}
+
+/* section two */
+.section-two{
+    margin-top: 10em;
+}
+
+.section-two--title{
+    text-align: left;
+    /* border: 2px solid red; */
+    position: absolute;
+    margin-top: -2%;
+    font-size: 3em;
+
+}
+
+/* section two flex */
+.section-two--flex{
+    flex-direction: column;
+}
+
+.btn{
+    width: 10%;
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 80%;
+}
+
+/* image section */
+
+.section-two--images{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+
+.section-two--pics{
+    min-height: 100vh;
+    margin-top: 1em;
+    background-position: center;
+}
+
+.section-two--pics + .section-two--pics{
+    margin-left: 1em;
+}
+
+.pics-title{
+    /* border: 2px solid red; */
+    margin-top: 25em;
+    padding-top: 0;
+    width: 85%;
+}
+
+/* pic one */
+.section-two--pic1{
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0.5),hsla(0, 0%, 0%,0.1)), url(images/desktop/image-deep-earth.jpg);  
+}
+
+/* pic two */
+.section-two--pic2{
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0.6),hsla(0, 0%, 0%,0.1)), url(images/desktop/image-night-arcade.jpg);
+    background-position: bottom; 
+}
+
+/* pic three */
+.section-two--pic3{
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0.5),hsla(0, 0%, 0%,0.1)), url(images/desktop/image-soccer-team.jpg);  
+}
+
+/* pic four */
+.section-two--pic4{
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0.5),hsla(0, 0%, 0%,0.1)), url(images/desktop/image-grid.jpg);
+}
+
+/* pic five */
+.section-two--pic5{
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0.5),hsla(0, 0%, 0%,0.1)), url(images/desktop/image-from-above.jpg);
+}
+
+/* pic six */
+.section-two--pic6{
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0.5),hsla(0, 0%, 0%,0.1)), url(images/desktop/image-pocket-borealis.jpg);
+}
+
+/* pic seven */
+.section-two--pic7{
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0.5),hsla(0, 0%, 0%,0.1)), url(images/desktop/image-curiosity.jpg);
+}
+
+/* pic eight */
+.section-two--pic8{
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0.5),hsla(0, 0%, 0%,0.1)), url(images/desktop/image-fisheye.jpg);
+}
+
+
+/* footer */
+
+.section-three{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-flex{
+    /* border: 2px solid blue; */
+    
+}
+
+.footer-logo{
+    /* border: 2px solid yellow; */
+    margin-left: 0;
+    display: flex;
+    width: 65%;
+}
+
+
+.section-three--links{
+    display: flex;
+    /* border: 2px solid yellow; */
+}
+
+.footer-link + .footer-link{
+    margin-left: 2em;
+}
+
+.icon-section{
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.iconic{
+    /* border: 2px solid red; */
+}
+
+.icons{
+    /* border: 2px solid green; */
+    width:15%;
+}
+
+
+
+
+
+
+}
