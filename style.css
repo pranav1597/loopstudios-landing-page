@@ -59,9 +59,27 @@ width:90%;
 .nav-link{
     color:white;
     text-decoration: none;
-    display: none;
     display: block;
     padding: .5em 0;
+}
+
+.nav-link::after{
+    display: block;
+    content: "";
+    position: absolute;
+    margin-top: 2px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease 0s;
+    border-radius: 150px;
+      
+}
+
+.nav-link:hover::after{
+    width: 75px;
+    background:white;
+    
 }
 
 /* active states */
@@ -380,7 +398,7 @@ width:90%;
     margin-top: 2px;
     width: 0;
     height: 2px;
-    background: white;
+    background: linear-gradient(#3494E6,#de6161);
     transition: width 0.3s ease 0s;
     border-radius: 150px;
       
@@ -388,7 +406,7 @@ width:90%;
 
 .nav-link:hover::after{
     width: 50px;
-    background:white;
+    background:linear-gradient(to right,#3494E6,#de6161);
 }
 
 /* nav-header title */
