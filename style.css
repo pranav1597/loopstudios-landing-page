@@ -75,6 +75,9 @@ width:90%;
     background-image: url(images/icon-close.svg) !important;
     background-repeat: no-repeat;
     background-size: cover;
+    width:0;
+    height:0;
+    padding:10px;
 }
 
 .hamburger-link.active{
@@ -523,7 +526,7 @@ width:90%;
 
 /* pic eight */
 .section-two--pic8{
-    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0.5),hsla(0, 0%, 0%,0.1)), url(images/desktop/image-fisheye.jpg);
+    background-image: linear-gradient(to right,hsla(0, 0%, 0%,0.5),rgba(218, 188, 188, 0.1)), url(images/desktop/image-fisheye.jpg);
 }
 
 
@@ -562,18 +565,10 @@ width:90%;
     justify-content: flex-end;
    
 }
-.iconic{
-    /* border: 2px solid red; */
-}
+
 
 .icons{
     /* border: 2px solid green; */
     width:15%;
 }
-
-
-
-
-
-
 }
